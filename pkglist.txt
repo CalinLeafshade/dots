@@ -1,0 +1,16 @@
+acpi
+arandr
+compton
+exa
+feh
+i3-gaps
+neomutt
+neovim
+ranger
+rofi
+scrot
+stow
+termite
+xdotool
+xorg-xinit
+xsel
