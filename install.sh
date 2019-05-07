@@ -1,5 +1,6 @@
 #! /bin/sh
 
+stow gtk
 stow bash
 stow bin
 stow compton
