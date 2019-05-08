@@ -1,9 +1,31 @@
 " Calin Leafshades nvim
 
+" Plugins {{{
+
+call plug#begin('~/.config/nvim/plugged')
+
+Plug 'caksoylar/vim-mysticaltutor'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'tpope/vim-fugitive'
+Plug 'digitaltoad/vim-pug'
+Plug 'vim-airline/vim-airline'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'pangloss/vim-javascript'
+
+call plug#end()
+
+"}}}
+
 " Section Color {{{
 
 syntax enable
 filetype plugin on
+set termguicolors
+colorscheme mysticaltutor
+hi Normal ctermbg=none
+hi Terminal ctermbg=none
+hi Terminal guibg=none
+hi Normal guibg=none
 
 " }}}
 
@@ -52,18 +74,6 @@ set foldmethod=syntax
 nnoremap <space> za   "Open and close folds
 " }}}
 
-" Plugins {{{
-
-call plug#begin('~/.config/nvim/plugged')
-
-Plug 'prettier/vim-prettier', { 'do': 'npm install' }
-Plug 'tpope/vim-fugitive'
-Plug 'digitaltoad/vim-pug'
-Plug 'vim-airline/vim-airline'
-Plug 'cakebaker/scss-syntax.vim'
-call plug#end()
-
-"}}}
 
 command! MakeTags !ctags -R .
 
