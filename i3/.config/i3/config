@@ -56,7 +56,9 @@ bindsym $mod+a focus parent
 
 # Spotify
 
-bindsym $mod+p exec ~/dots/bin/sp play
+bindsym $mod+p exec playerctl play-pause
+bindsym $mod+period exec playerctl next
+bindsym $mod+comma exec playerctl previous
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.

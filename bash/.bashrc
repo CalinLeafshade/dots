@@ -7,7 +7,7 @@
 
 source /usr/share/git/completion/git-prompt.sh
 
-alias v='neovim'
+alias v='nvim'
 alias sv='sudo neovim'
 alias next-rel='semver `git tag | tail -n 1` -i'
 alias ls='ls --color=auto'
