@@ -34,6 +34,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 setxkbmap -option caps:escape
-feh --bg-fill ~/wallpapers/tokyo2.jpg &
 compton -b
+~/bin/bg.sh ~/wallpapers/ds.gif
 exec i3

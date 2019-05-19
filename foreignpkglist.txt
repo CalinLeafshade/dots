@@ -1,1 +1,2 @@
 polybar
+shantz-xwinwrap-bzr
