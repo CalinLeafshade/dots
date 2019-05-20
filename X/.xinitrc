@@ -35,5 +35,5 @@ fi
 
 setxkbmap -option caps:escape
 compton -b
-~/bin/bg.sh ~/wallpapers/ds.gif
+feh --bg-scale ~/wallpapers/ds.gif
 exec i3
