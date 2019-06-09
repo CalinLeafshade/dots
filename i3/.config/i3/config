@@ -21,6 +21,8 @@ bindsym $mod+s exec ~/bin/snippy.sh
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show run 
 
+bindsym $mod+Print exec ~/bin/cast.sh
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down

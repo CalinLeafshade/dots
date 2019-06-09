@@ -1,4 +1,4 @@
-age:
+# Usage:
 # `record`: Ask for recording type via dmenu
 # `record screencast`: Record both audio and screen
 # `record video`: Record only screen
@@ -27,13 +27,15 @@ killrecording() {
 
 screencast() { \
 	ffmpeg -y \
-	-f x11grab \
+  -hwaccel vaapi -vaapi_device /dev/dri/renderD128 \
+  -f x11grab \
 	-framerate 60 \
 	-s $(xdpyinfo | grep dimensions | awk '{print $2;}') \
 	-i :0.0 \
 	-f alsa -i default \
-	-r 30 \
- 	-c:v libx264rgb -crf 0 -preset ultrafast -c:a flac \
+  -vf 'format=nv12,hwupload' -threads 8 \
+  -c:v h264_vaapi \
+  -c:a flac \
 	"$HOME/screencast-$(date '+%y%m%d-%H%M-%S').mkv" &
 	echo $! > /tmp/recordingpid
 	updateicon "⏺️🎙️"

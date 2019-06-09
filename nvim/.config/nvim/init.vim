@@ -16,7 +16,7 @@ call plug#end()
 
 "}}}
 
-" Section Color {{{
+" Colors {{{
 
 syntax enable
 filetype plugin on
@@ -74,8 +74,11 @@ set foldmethod=syntax
 nnoremap <space> za   "Open and close folds
 " }}}
 
+" Commands {{{
 
 command! MakeTags !ctags -R .
+
+" }}}
 
 " Prettier {{{
 
@@ -94,7 +97,7 @@ let g:airline_powerline_fonts = 1
 
 " VIMRC {{{
 
-nnoremap <leader>ev :vsp $MYVIMRC<CR> " type,evto edit the Vimrc
+nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
 " }}}
