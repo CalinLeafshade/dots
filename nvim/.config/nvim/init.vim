@@ -27,6 +27,8 @@ hi Terminal ctermbg=none
 hi Terminal guibg=none
 hi Normal guibg=none
 
+autocmd BufNewFile,BufRead *.json.template set syntax=json
+
 " }}}
 
 " Tabs And Spaces {{{
