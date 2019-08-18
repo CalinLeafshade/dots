@@ -1,0 +1,11 @@
+#!/bin/bash
+
+declare -A input_names=(
+	[hdmi]=0x11
+	[dp]=0x0f
+)
+
+input=${input_names[$1]:-$1}
+
+sudo ddcutil -d 2 setvcp 60 $input
+
