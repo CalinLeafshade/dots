@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "Enter the document name, followed by [ENTER]:"
+
+read docName
+
+scanimage -x 210.0 -y 297.0 --batch --batch-print | tesseract -c stream_filelist=true - - pdf > ~/docscans/$docName.pdf

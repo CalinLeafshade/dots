@@ -1,0 +1,25 @@
+
+#!/bin/bash
+
+# filename   : screenshot.sh
+# created at : 2013-04-05 20:01:35
+# author     : Jianing Yang <jianingy.yang AT gmail DOT com>
+sleep 1
+# client id from imgur.com
+client=0350033e1d023ba
+# temporary file for storing screenshot
+img=$(mktemp --suffix .png)
+trap "rm $img" EXIT
+
+# shot. use import from imagemagick as scrot has some keybinding problem
+import $img || exit 1
+
+# upload
+link=$(curl -s -X POST -H "Authorization: Client-ID $client" -F "image=@$img" https://api.imgur.com/3/upload.xml | grep -oE '<link>([^<]+)</link>' | sed 's#</\?link>##g')
+
+[ -z "$link" ] && echo 'upload failed!' && exit
+
+# save link in clipboard 
+(echo $link | xclip -selection clipboard -in) || exit 1
+
+notify-send "screenshot saved at $link"

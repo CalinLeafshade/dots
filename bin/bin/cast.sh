@@ -26,15 +26,14 @@ killrecording() {
 	}
 
 screencast() { \
-	ffmpeg -y \
-  -hwaccel vaapi -vaapi_device /dev/dri/renderD128 \
-  -f x11grab \
-	-framerate 60 \
-	-s $(xdpyinfo | grep dimensions | awk '{print $2;}') \
+	ffmpeg -loglevel debug -threads:v 2 -threads:a 8 -filter_threads 2 \
+  -f x11grab -framerate 60 \
+  -s $(xdpyinfo | grep dimensions | awk '{print $2;}') \
 	-i :0.0 \
 	-f alsa -i default \
-  -vf 'format=nv12,hwupload' -threads 8 \
-  -c:v h264_vaapi \
+  -b:v 4000k -minrate:v 4000k -maxrate:v 4000k -bufsize:v 4000k \
+  -c:v h264_nvenc -pix_fmt nv12 -qp:v 19 \
+  -profile:v high -rc:v cbr_ld_hq -preset:v llhq \
   -c:a flac \
 	"$HOME/screencast-$(date '+%y%m%d-%H%M-%S').mkv" &
 	echo $! > /tmp/recordingpid

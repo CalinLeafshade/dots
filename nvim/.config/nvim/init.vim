@@ -1,9 +1,18 @@
-" Calin Leafshades nvim
+"    __             __     _               _      
+"   / /  ___  __ _ / _|___| |__   __ _  __| | ___ 
+"  / /  / _ \/ _` | |_/ __| '_ \ / _` |/ _` |/ _ \
+" / /__|  __/ (_| |  _\__ \ | | | (_| | (_| |  __/
+" \____/\___|\__,_|_| |___/_| |_|\__,_|\__,_|\___|
+"
+" Filename:   init.vim
+" Github:     https://github.com/CalinLeafshade/dots/
+" Maintainer: Steve Poulton (Calin Leafshade)
 
 " Plugins {{{
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'caksoylar/vim-mysticaltutor'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'tpope/vim-fugitive'
@@ -45,6 +54,7 @@ set expandtab
 set path+=**
 set wildmenu
 set wildignore+=**/node_modules/** 
+set hidden
 
 " }}}
 
@@ -73,7 +83,7 @@ set foldenable
 set foldlevelstart=10
 set foldnestmax=10
 set foldmethod=syntax
-nnoremap <space> za   "Open and close folds
+nnoremap <space> za
 " }}}
 
 " Commands {{{
@@ -100,7 +110,7 @@ let g:airline_powerline_fonts = 1
 " VIMRC {{{
 
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
-nnoremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <leader>sv :source $MYVIMRC <bar> :doautocmd BufRead<CR>
 
 " }}}
 

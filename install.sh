@@ -7,6 +7,7 @@ stow compton
 stow i3
 stow nvim
 stow polybar
+stow dunst
 stow rofi
 stow termite
 stow wallpapers
