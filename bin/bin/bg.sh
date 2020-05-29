@@ -1,19 +1,28 @@
 #!/bin/bash
 
+PIDFILE="/var/run/user/$UID/bg.pid"
+
+declare -a PIDs
+
 _screen() {
-    xwinwrap -ov -g $1 -- mpv --fullscreen\
-        --on-all-workspaces \
+    xwinwrap -ov -ni -g "$1" -- mpv --fullscreen\
         --no-stop-screensaver \
-        --vo=gpu \
-        --loop-file --no-audio --no-osc --no-osd-bar -wid WID --quiet \
-        "$2" --background="$3" --video-zoom="$4" &
+        --vo=vdpau --hwdec=vdpau \
+        --loop-file --no-audio --no-osc --no-osd-bar -wid WID --no-input-default-bindings \
+        "$2" &
+    PIDs+=($!)
 }
 
-killall xwinwrap
+while read p; do
+  [[ $(ps -p "$p" -o comm=) == "xwinwrap" ]] && kill -9 "$p";
+done < $PIDFILE
 
 sleep 0.5
 
 for i in $( xrandr -q | grep ' connected' | grep -oP '\d+x\d+\+\d+\+\d+')
 do
-    _screen $i "$1" "${2:-#000000}" "${3:-0}"
+    _screen "$i" "$1"
 done
+
+printf "%s\n" "${PIDs[@]}" > $PIDFILE
+
