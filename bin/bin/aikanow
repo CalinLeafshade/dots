@@ -1,0 +1,3 @@
+#!/bin/sh
+
+curl "https://app.aikahq.com/api/calendar/now?key=N6vjRBylF9O60I6f&tz=Europe/London" -s | jq -r ".description"

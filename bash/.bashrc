@@ -17,6 +17,11 @@ man() {
     command man "$@"
 }
 
+function currentAppointment() {
+  now=$(date '+%Y-%m-%d %H:%M')
+  calcurse -Q --filter-type cal --input-datefmt 4 --filter-start-before "$now" --filter-end-after "$now" --format-apt "%S ⇨ %E - %m" | tail -n1
+}
+
 function nextver() {
     local RE='[^0-9]*\([0-9]*\)[.]\([0-9]*\)[.]\([0-9]*\)\([0-9A-Za-z-]*\)'
     
@@ -54,6 +59,6 @@ alias v='nvim'
 alias sv='sudo nvim'
 alias next-rel='semver `git tag | tail -n 1` -i'
 alias ls='ls --classify --tabsize=0 --group-directories-first --literal --color=auto --show-control-chars --human-readable'
-PS1='\n\[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h:\[$(tput sgr0)\]\[\033[38;5;14m\][\w]\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)$(__git_ps1 "(%s) ")\n\$ '
+PS1='\n\[\e[91m\]\u\[$(tput sgr0)\]\[\e[31m\]@\h:\[$(tput sgr0)\]\[\e[93m\][\w]\[$(tput sgr0)\]\[\e[36m\] $(__git_ps1 "(%s) ")\[$(tput sgr0)\]\n\$ '
 
 eval `dircolors -b ~/.dir_colors`

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+EXCLUDE_REGEX=".*(node_modules|pyenv|.hg|.git|vendor).*"
+
+
+FILE=$(find $HOME -type f -regextype posix-extended -not -regex "$EXCLUDE_REGEX" 2>/dev/null | fzf)
+
+echo "$FILE" | cat -v
+
+#[ -z "$FILE" ] && nvim "$FILE"

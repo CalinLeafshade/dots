@@ -33,8 +33,12 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-~/.screenlayouts/default.sh
+~/.screenlayout/default.sh
+/usr/bin/dropbox &
 setxkbmap -option caps:escape
-compton -b
-feh --bg-scale ~/wallpapers/ds.gif
+picom -b --experimental-backends
+feh --bg-fill ~/wallpapers/forest.jpg
+xset s off
+#sxhkd &
+#exec startfutile
 exec i3

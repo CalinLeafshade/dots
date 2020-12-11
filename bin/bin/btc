@@ -1,0 +1,4 @@
+#!/bin/sh
+
+value=$(curl -s gbp.rate.sx/1BTC)
+printf "£%0.2f\n" $value

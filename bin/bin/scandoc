@@ -4,4 +4,4 @@ echo "Enter the document name, followed by [ENTER]:"
 
 read docName
 
-scanimage -x 210.0 -y 297.0 --batch --batch-print | tesseract -c stream_filelist=true - - pdf > ~/docscans/$docName.pdf
+scanimage -d dsseries:usb:0x04F9:0x60E0 -x 210.0 -y 297.0 --batch --batch-print | tesseract -c stream_filelist=true - - pdf > ~/docscans/$docName.pdf

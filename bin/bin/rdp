@@ -1,0 +1,9 @@
+#!/bin/sh
+
+server=$1
+
+host=$(lpass show $server --field="Hostname")
+user=$(lpass show $server --username)
+pass=$(lpass show $server --password)
+
+xfreerdp /u:"$user" /p:"$pass" /v:"$host:3389" /dynamic-resolution -grab-keyboard +fonts +clipboard

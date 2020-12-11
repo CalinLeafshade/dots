@@ -1,10 +1,20 @@
 set $mod Mod4
 
-for_window [class=".*"] border pixel 0 
-gaps inner 15 
+for_window [class=".*"] border pixel 2
+
+gaps outer 0
+gaps inner 12
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:Source Code Pro 12
+
+client.focused          #819F56 #285577 #ffffff #2e9ef4   #819F56
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -22,6 +32,8 @@ bindsym $mod+s exec ~/bin/snippy.sh
 bindsym $mod+d exec rofi -show run 
 
 bindsym $mod+Print exec ~/bin/cast.sh
+
+bindsym $mod+w exec chromium
 
 # change focus
 bindsym $mod+h focus left
@@ -56,11 +68,11 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# Spotify
+# MPD
 
-bindsym $mod+p exec playerctl play-pause
-bindsym $mod+period exec playerctl next
-bindsym $mod+comma exec playerctl previous
+bindsym $mod+p exec mpc toggle
+bindsym $mod+period exec mpc next
+bindsym $mod+comma exec mpc prev
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -112,4 +124,13 @@ bindsym $mod+u resize grow height 10 px or 10 ppt
 bindsym $mod+i resize shrink height 10 px or 10 ppt
 bindsym $mod+o resize grow width 10 px or 10 ppt
 
+for_window [ title="notetaker_window" ] floating enable
+
+bindsym $mod+n exec termite -e /home/steve/bin/notetaker -t notetaker_window
+bindsym $mod+Shift+n exec mostRecentNote
+
+exec --no-startup-id redshift
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+
+# vim:filetype=i3

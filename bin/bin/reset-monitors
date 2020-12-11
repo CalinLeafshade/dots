@@ -1,0 +1,4 @@
+#!/bin/sh
+
+~/.screenlayout/default.sh
+~/.config/polybar/launch.sh

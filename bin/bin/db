@@ -1,0 +1,10 @@
+#!/bin/bash
+
+db=$1
+
+function getField()
+{
+  lpass show $db --field=$1
+}
+
+mysql -h $(getField Hostname) -u $(lpass show $db --username) --password=$(lpass show $db --password) -D $(getField Database)

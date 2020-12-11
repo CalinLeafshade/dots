@@ -6,7 +6,7 @@
 
 * {
     selected-normal-foreground:  rgba ( 248, 248, 242, 100 % );
-    foreground:                  rgba ( 248, 248, 242, 100 % );
+    foreground:                 #c5c8c6; 
     normal-foreground:           @foreground;
     alternate-normal-background: rgba ( 39, 40, 34, 0 % );
     red:                         rgba ( 220, 50, 47, 100 % );
@@ -18,7 +18,7 @@
     lightbg:                     rgba ( 238, 232, 213, 100 % );
     selected-active-foreground:  rgba ( 166, 226, 42, 100 % );
     alternate-active-background: rgba ( 39, 40, 34, 0 % );
-    background:                  rgba ( 63, 63, 63, 80 % );
+    background:                  rgba ( 28,24,28, 85 % );
     bordercolor:                 rgba ( 0, 43, 54, 100 % );
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 39, 40, 34, 0 % );
@@ -26,7 +26,7 @@
     selected-normal-background:  rgba ( 20, 20, 17, 100 % );
     border-color:                @foreground;
     spacing:                     2;
-    separatorcolor:              rgba ( 230, 219, 116, 100 % );
+    separatorcolor:              #69a65c;
     urgent-background:           rgba ( 39, 40, 34, 0 % );
     selected-urgent-background:  rgba ( 249, 38, 114, 100 % );
     alternate-urgent-foreground: @urgent-foreground;
@@ -38,7 +38,7 @@
 #window {
     background-color: @background;
     border:           0;
-    padding:          5;
+    padding:          15;
 }
 #mainbox {
     border:  0;

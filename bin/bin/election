@@ -1,0 +1,8 @@
+#!/bin/sh
+
+data=$(curl -s 'https://static01.nyt.com/elections-assets/2020/data/api/2020-11-03/embeds/live-blog.json')
+
+democRATS=$(echo $data | jq ".data.party_control[1].parties.democrat.count")
+republiCANTS=$(echo $data |  jq ".data.party_control[1].parties.republican.count")
+
+echo "Biden: $democRATS - Trump: $republiCANTS"

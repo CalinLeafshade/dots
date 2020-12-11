@@ -1,0 +1,8 @@
+#!/bin/sh
+
+todayStart=$(date '+%Y-%m-%dT00:00')
+todayEnd=$(date '+%Y-%m-%dT23:59')
+tomorrow=$(date -d "+1 days" '+%Y-%m-%d')
+
+
+gcalcli agenda "$todayStart" "$todayEnd" --tsv | grep -v "$tomorrow" | cut -f 2,4,5 | grep --color=always -E "#[[:alnum:]]*" 

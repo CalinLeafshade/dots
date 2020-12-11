@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "Click a window to start recording"
+
+read x y W H <<< `xwininfo | grep -e Width -e Height -e Absolute | grep -oE "[[:digit:]]{1,}" | tr "\n" " "`
+
+ffmpeg -f alsa -ac 1 -i pulse -f x11grab -s ${W}x${H} -r 25 -i :0.0+${x},${y} $1

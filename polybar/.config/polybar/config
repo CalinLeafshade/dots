@@ -18,7 +18,7 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #66222222
+background = #D81c181c
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
@@ -30,7 +30,7 @@ alert = #bd2c40
 [bar/leafshade]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 32 
+height = 36
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0
@@ -42,7 +42,7 @@ foreground = ${colors.foreground}
 line-size = 2 
 line-color = #f00
 
-border-size = 15 
+border-size = 0 
 border-bottom-size = 0
 border-color = #00000000
 
@@ -52,13 +52,13 @@ padding-right = 2 2
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "Source Code Pro:size=11;1" 
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-0 = "Cascadia Code:size=11;1"
+font-1 = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
 font-2 = siji:pixelsize=10;1
 
-modules-left = i3
+modules-left = i3 bspwm
 modules-center = 
-modules-right = spotify battery date 
+modules-right = mpd aikanow btc temperature memory timeleft date 
 
 tray-position = right
 tray-padding = 0
@@ -67,13 +67,81 @@ tray-padding = 0
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+[module/btc]
+type = custom/script
+interval = 60
+format-prefix = "💷 "
+format-prefix-font=1
+format = <label>
+exec = /home/steve/bin/btc
+format-underline = #69a65c
+
+[module/mpd]
+type= internal/mpd
+format-prefix = "lol"
+format-online = 🎵 <label-song>
+;format-online = <toggle> <label-song>
+;format-playing = ${self.format-online}
+;format-paused = ${self.format-online}
+;format-stopped = ${self.format-online}
+format-offline = mpd is offline
+
+icon-play = ⏵
+icon-pause = ⏸
+icon-stop = ⏹
+icon-prev = ⏮
+icon-next = ⏭
+icon-seekb = ⏪
+icon-seekf = ⏩
+icon-random = 🔀
+icon-repeat = 🔁
+icon-repeatone = 🔂
+icon-single = 🔂
+icon-consume = ✀
+
+; Used to display the state of random/repeat/repeatone/single
+; Only applies if <icon-[random|repeat|repeatone|single]> is used
+toggle-on-foreground = #ff
+toggle-off-foreground = #55
+
+; Only applies if <bar-progress> is used
+bar-progress-width = 45
+bar-progress-indicator = |
+bar-progress-fill = ─
+bar-progress-empty = ─
+
+
+;format-underline = #69a65c
+
+;label-song = %artist% - %title%
+
+interval = 2
+
+[module/timeleft]
+type = custom/script
+interval = 1
+format-prefix = "💀 "
+format-prefix-font=1
+format = <label>
+exec = /home/steve/bin/timeleft
+format-underline = #69a65c
+
+[module/aikanow]
+type = custom/script
+interval = 20
+format-prefix = "⏲️ "
+format-prefix-font=1
+format = <label>
+exec = /home/steve/bin/aikanow
+format-underline = #69a65c
+
 [module/spotify]
 type = custom/script
 interval = 1
 format-prefix = "🎵 "
 format = <label>
 exec = python /home/steve/bin/spotify_status.py -f '{artist}: {song}'
-format-underline = #1db954
+format-underline = #69a65c
 
 [module/xwindow]
 type = internal/xwindow
@@ -88,6 +156,63 @@ mount-0 = /
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/bspwm]
+type = internal/bspwm
+
+; Only show workspaces defined on the same output as the bar
+; NOTE: The bspwm and XRandR monitor names must match, which they do by default.
+; But if you rename your bspwm monitors with bspc -n this option will no longer
+; behave correctly.
+; Default: true
+pin-workspaces = true
+
+; Output mode flags after focused state label
+; Default: false
+inline-mode = false
+
+; Create click handler used to focus workspace
+; Default: true
+enable-click = false
+
+; Create scroll handlers used to cycle workspaces
+; Default: true
+enable-scroll = false
+
+; Set the scroll cycle direction 
+; Default: true
+reverse-scroll = false
+
+; Use fuzzy (partial) matching on labels when assigning 
+; icons to workspaces
+; Example: code;♚ will apply the icon to all workspaces 
+; containing 'code' in the label
+; Default: false
+fuzzy-match = true
+
+format = <label-state>
+
+
+label-occupied = %name%
+label-occupied-padding = 2
+label-empty = %name%
+label-empty-padding = 2
+label-focused-padding = 2
+
+; focused = Active workspace on focused monitor
+label-focused = %name%
+label-focused-underline = #69a65c
+
+; visible = Active workspace on unfocused monitor
+label-visible-underline = ${self.label-focused-underline}
+label-visible = %name%
+
+; urgent = Workspace with urgency hint set
+label-urgent-background = #ff0000
+
+label-separator = |
+label-separator-padding = 0
+label-separator-foreground = #ffb52a
 
 [module/i3]
 type = internal/i3
@@ -104,7 +229,7 @@ label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-underline = ${colors.primary}
+label-focused-underline = #69a65c
 label-focused-padding = ${self.label-mode-padding}
 
 ; unfocused = Inactive workspace on any monitor
@@ -196,7 +321,7 @@ time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0a6cf5
+format-underline = #69a65c
 label = %date% %time%
 
 
@@ -217,6 +342,55 @@ format-full-prefix = "FULL"
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
+[module/memory]
+type = internal/memory
+
+interval = 3
+format = MEM:<label> <ramp-used>
+
+; Only applies if <ramp-used> is used
+ramp-used-0 = ▁
+ramp-used-1 = ▂
+ramp-used-2 = ▃
+ramp-used-3 = ▄
+ramp-used-4 = ▅
+ramp-used-5 = ▆
+ramp-used-6 = ▇
+ramp-used-7 = █
+
+format-underline = #69a65c
+
+[module/temperature]
+type = internal/temperature
+
+format = CPU:<label>
+format-underline = #69a65c
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 0.5
+
+; Thermal zone to use
+; To list all the zone types, run 
+; $ for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
+; Default: 0
+thermal-zone = 0
+
+; Full path of temperature sysfs path
+; Use `sensors` to find preferred temperature source, then run
+; $ for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
+; to find path to desired file
+; Default reverts to thermal zone setting
+hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon2/temp2_input
+
+; Base temperature for where to start the ramp (in degrees celsius)
+; Default: 0
+base-temperature = 40
+
+; Threshold temperature to display warning label (in degrees celsius)
+; Default: 80
+warn-temperature = 80
+
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
@@ -226,7 +400,7 @@ screenchange-reload = true
 ;pseudo-transparency = false
 
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+margin-top = 0
+margin-bottom = 0
 
 ; vim:ft=dosini

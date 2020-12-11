@@ -4,7 +4,7 @@
 #bold_is_bright = true
 #clickable_url = true
 #dynamic_title = true
-font = Fira Code 11
+font = Cascadia Code 14
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -24,7 +24,7 @@ scrollback_lines = 10000
 #cursor_blink = system
 
 # "block", "underline" or "ibeam"
-#cursor_shape = block
+cursor_shape = underline
 
 # Hide links that are no longer valid in url select overlay mode
 #filter_unmatched_urls = true
@@ -43,16 +43,16 @@ scrollback_lines = 10000
 # special
 foreground      = #c5c8c6
 foreground_bold = #c5c8c6
-cursor          = #c5c8c6
-background      = rgba(28,24,28,0.7)
+# cursor          = #c5c8c6
+background      = rgba(28,24,28,0.85) 
 
 # black
 color0  = #282a2e
 color8  = #373b41
 
 # red
-color1  = #7b4646
-color9  = #9f5656
+color1  = #6b7b46
+color9  = #819f56
 
 # green
 color2  = #5c5c4c
@@ -67,8 +67,8 @@ color4  = #4f5261
 color12 = #7f9191
 
 # magenta
-color5  = #75485c
-color13 = #a65c7c
+color5  = #487549
+color13 = #69a65c
 
 # cyan
 color6  = #635059
@@ -77,8 +77,6 @@ color14 = #7d6f6b
 # white
 color7  = #8d827c
 color15 = #c6c0aa
-
-
 
 [hints]
 #font = Monospace 12

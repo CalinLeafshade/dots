@@ -1,0 +1,361 @@
+sw_volume: 98
+audio_device_state:1:pulse
+audio_device_state:1:Visualizer feed
+state: pause
+current: 50
+time: 2.276000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Fearofdark/Motorway/Fearofdark - Motorway - 01 23rd Century Life.flac
+1:Fearofdark/Motorway/Fearofdark - Motorway - 02 Suburban Supernatural.flac
+2:Fearofdark/Motorway/Fearofdark - Motorway - 03 Zeta Function.flac
+3:Fearofdark/Motorway/Fearofdark - Motorway - 04 Rolling Down The Street, In My Katamari.flac
+4:Fearofdark/Motorway/Fearofdark - Motorway - 05 Funknitium-99.flac
+5:Fearofdark/Motorway/Fearofdark - Motorway - 06 Fast City.flac
+6:Fearofdark/Motorway/Fearofdark - Motorway - 07 An Age Of Planetary Pride.flac
+7:Fearofdark/Motorway/Fearofdark - Motorway - 08 Surfing On A Sine Wave.flac
+8:Fearofdark/Motorway/Fearofdark - Motorway - 09 Polaris.flac
+9:Fearofdark/Motorway/Fearofdark - Motorway - 10 Motorway.flac
+10:she/orion/01 - escape.mp3
+11:she/orion/02 - atomic.mp3
+12:she/orion/03 - moonlight.mp3
+13:she/orion/04 - computer music.mp3
+14:she/orion/05 - ride.mp3
+15:she/orion/06 - home.mp3
+16:she/orion/07 - just your eyes.mp3
+17:she/orion/08 - see you again.mp3
+18:she/orion/09 - generic eric.mp3
+19:she/orion/10 - elemental nights.mp3
+20:she/orion/11 - orion.mp3
+song_begin: Art Garfunkel/Angel Clare/Art Garfunkel - Angel Clare.cue/track0001
+Range: 0-302000
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1973
+AlbumArtist: Art Garfunkel
+Album: Angel Clare
+Track: 01
+Title: Travelling Boy
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Angel Clare/Art Garfunkel - Angel Clare.cue/track0002
+Range: 302000-545266
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1973
+AlbumArtist: Art Garfunkel
+Album: Angel Clare
+Track: 02
+Title: Down In The Willow Garden
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Angel Clare/Art Garfunkel - Angel Clare.cue/track0003
+Range: 545266-763120
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1973
+AlbumArtist: Art Garfunkel
+Album: Angel Clare
+Track: 03
+Title: I Shall Sing
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Angel Clare/Art Garfunkel - Angel Clare.cue/track0004
+Range: 763120-969640
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1973
+AlbumArtist: Art Garfunkel
+Album: Angel Clare
+Track: 04
+Title: Old Man
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Angel Clare/Art Garfunkel - Angel Clare.cue/track0005
+Range: 969640-1161560
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1973
+AlbumArtist: Art Garfunkel
+Album: Angel Clare
+Track: 05
+Title: Feuilles-Oh / Do Space Men Pass Dead Souls On Their Way To The Moon?
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Angel Clare/Art Garfunkel - Angel Clare.cue/track0006
+Range: 1161560-1392253
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1973
+AlbumArtist: Art Garfunkel
+Album: Angel Clare
+Track: 06
+Title: All I Know
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Angel Clare/Art Garfunkel - Angel Clare.cue/track0007
+Range: 1392253-1598973
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1973
+AlbumArtist: Art Garfunkel
+Album: Angel Clare
+Track: 07
+Title: Mary Was An Only Child
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Angel Clare/Art Garfunkel - Angel Clare.cue/track0008
+Range: 1598973-1801333
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1973
+AlbumArtist: Art Garfunkel
+Album: Angel Clare
+Track: 08
+Title: Woyaya
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Angel Clare/Art Garfunkel - Angel Clare.cue/track0009
+Range: 1801333-2128053
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1973
+AlbumArtist: Art Garfunkel
+Album: Angel Clare
+Track: 09
+Title: Barbara Allen
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Angel Clare/Art Garfunkel - Angel Clare.cue/track0010
+Range: 2128053-2341813
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1973
+AlbumArtist: Art Garfunkel
+Album: Angel Clare
+Track: 10
+Title: Another Lullaby
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Breakaway/Art Garfunkel - Breakaway.cue/track0001
+Range: 0-229773
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1975
+AlbumArtist: Art Garfunkel
+Album: Breakaway
+Track: 01
+Title: I Believe (When I Fall In Love It Will Be Forever)
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Breakaway/Art Garfunkel - Breakaway.cue/track0002
+Range: 229773-417173
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1975
+AlbumArtist: Art Garfunkel
+Album: Breakaway
+Track: 02
+Title: Rag Doll
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Breakaway/Art Garfunkel - Breakaway.cue/track0003
+Range: 417173-633706
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1975
+AlbumArtist: Art Garfunkel
+Album: Breakaway
+Track: 03
+Title: Break Away
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Breakaway/Art Garfunkel - Breakaway.cue/track0004
+Range: 633706-907533
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1975
+AlbumArtist: Art Garfunkel
+Album: Breakaway
+Track: 04
+Title: Disney Girls
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Breakaway/Art Garfunkel - Breakaway.cue/track0005
+Range: 907533-1126666
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1975
+AlbumArtist: Art Garfunkel
+Album: Breakaway
+Track: 05
+Title: Waters Of March
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Breakaway/Art Garfunkel - Breakaway.cue/track0006
+Range: 1126666-1360720
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1975
+AlbumArtist: Art Garfunkel
+Album: Breakaway
+Track: 06
+Title: My Little Town
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Breakaway/Art Garfunkel - Breakaway.cue/track0007
+Range: 1360720-1582786
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1975
+AlbumArtist: Art Garfunkel
+Album: Breakaway
+Track: 07
+Title: I Only Have Eyes For You
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Breakaway/Art Garfunkel - Breakaway.cue/track0008
+Range: 1582786-1785453
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1975
+AlbumArtist: Art Garfunkel
+Album: Breakaway
+Track: 08
+Title: Looking For The Right One
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Breakaway/Art Garfunkel - Breakaway.cue/track0009
+Range: 1785453-1997293
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1975
+AlbumArtist: Art Garfunkel
+Album: Breakaway
+Track: 09
+Title: 99 Miles From L.A.
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Breakaway/Art Garfunkel - Breakaway.cue/track0010
+Range: 1997293-
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1975
+AlbumArtist: Art Garfunkel
+Album: Breakaway
+Track: 10
+Title: The Same Old Tears On A New Background
+Artist: Art Garfunkel
+song_end
+song_begin: Art Garfunkel/Scissors Cut/Art Garfunkel - Scissors Cut.flac
+Range: 0-233293
+Time: 1901.440000
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1981
+AlbumArtist: Art Garfunkel
+Album: Scissors Cut
+Track: 01
+Title: Scissors Cut
+Artist: Art Garfunkel
+mtime: 1604878311
+song_end
+song_begin: Art Garfunkel/Scissors Cut/Art Garfunkel - Scissors Cut.flac
+Range: 233293-427093
+Time: 1901.440000
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1981
+AlbumArtist: Art Garfunkel
+Album: Scissors Cut
+Track: 02
+Title: A Heart In New York
+Artist: Art Garfunkel
+mtime: 1604878311
+song_end
+song_begin: Art Garfunkel/Scissors Cut/Art Garfunkel - Scissors Cut.flac
+Range: 427093-565933
+Time: 1901.440000
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1981
+AlbumArtist: Art Garfunkel
+Album: Scissors Cut
+Track: 03
+Title: Up In The World
+Artist: Art Garfunkel
+mtime: 1604878311
+song_end
+song_begin: Art Garfunkel/Scissors Cut/Art Garfunkel - Scissors Cut.flac
+Range: 565933-793920
+Time: 1901.440000
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1981
+AlbumArtist: Art Garfunkel
+Album: Scissors Cut
+Track: 04
+Title: Hang On In
+Artist: Art Garfunkel
+mtime: 1604878311
+song_end
+song_begin: Art Garfunkel/Scissors Cut/Art Garfunkel - Scissors Cut.flac
+Range: 793920-968840
+Time: 1901.440000
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1981
+AlbumArtist: Art Garfunkel
+Album: Scissors Cut
+Track: 05
+Title: So Easy to Begin
+Artist: Art Garfunkel
+mtime: 1604878311
+song_end
+song_begin: Art Garfunkel/Scissors Cut/Art Garfunkel - Scissors Cut.flac
+Range: 968840-1172373
+Time: 1901.440000
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1981
+AlbumArtist: Art Garfunkel
+Album: Scissors Cut
+Track: 06
+Title: Can't Turn My
+Artist: Art Garfunkel
+mtime: 1604878311
+song_end
+song_begin: Art Garfunkel/Scissors Cut/Art Garfunkel - Scissors Cut.flac
+Range: 1172373-1363960
+Time: 1901.440000
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1981
+AlbumArtist: Art Garfunkel
+Album: Scissors Cut
+Track: 07
+Title: TheFrench Waltz
+Artist: Art Garfunkel
+mtime: 1604878311
+song_end
+song_begin: Art Garfunkel/Scissors Cut/Art Garfunkel - Scissors Cut.flac
+Range: 1363960-1557320
+Time: 1901.440000
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1981
+AlbumArtist: Art Garfunkel
+Album: Scissors Cut
+Track: 08
+Title: The Romance
+Artist: Art Garfunkel
+mtime: 1604878311
+song_end
+song_begin: Art Garfunkel/Scissors Cut/Art Garfunkel - Scissors Cut.flac
+Range: 1557320-1785773
+Time: 1901.440000
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1981
+AlbumArtist: Art Garfunkel
+Album: Scissors Cut
+Track: 09
+Title: In Cars
+Artist: Art Garfunkel
+mtime: 1604878311
+song_end
+song_begin: Art Garfunkel/Scissors Cut/Art Garfunkel - Scissors Cut.flac
+Range: 1785773-
+Time: 1901.440000
+Genre: Rock / Pop Rock / Folk Rock / Ballad
+Date: 1981
+AlbumArtist: Art Garfunkel
+Album: Scissors Cut
+Track: 10
+Title: That's All I've Got To Say (Theme From 'The Last Unicorn')
+Artist: Art Garfunkel
+mtime: 1604878311
+song_end
+51:Midlake/Midlake - Antiphon [2013] [FLAC]/01 - Antiphon.flac
+52:Midlake/Midlake - The Courage of Others [2010] [FLAC]/01 - Acts of Man.flac
+53:Midlake/Midlake - The Courage of Others [2010] [FLAC]/02 - Winter Dies.flac
+54:Supertramp/Breakfast In America/02 - The Logical Song.dff
+55:Supertramp/Breakfast In America/04 - Breakfast In America.dff
+playlist_end
