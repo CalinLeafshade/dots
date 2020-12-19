@@ -8,6 +8,8 @@ if fn.empty(fn.glob(install_path)) > 0 then
 	execute('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
 end
 
+
+
 execute [[ packadd packer.nvim ]]
 execute [[ autocmd BufWritePost plugins.lua PackerCompile ]]
 
@@ -31,6 +33,7 @@ return require("packer").startup(function()
 
   use { "prettier/vim-prettier", run = "yarn install" }
   use "sheerun/vim-polyglot"
+  use "digitaltoad/vim-pug"
 
   use 'euclidianAce/BetterLua.vim'
   use 'sainnhe/forest-night'

@@ -54,6 +54,7 @@ opt.hlsearch = false
 require("leafshade.plugins")
 require("leafshade.autocomplete")
 require("leafshade.bindings")
+require("leafshade.rename")
 
 require("leafshade.telescope")
 require("leafshade.telescope.mappings")

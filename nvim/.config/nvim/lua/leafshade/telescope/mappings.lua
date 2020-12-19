@@ -32,7 +32,8 @@ map_tele('<space>gw', 'grep_string', { short_path = true, word_match = '-w' })
 map_tele('<space>ft', 'git_files')
 map_tele('<space>fg', 'live_grep')
 map_tele('<space>fo', 'oldfiles')
-map_tele('<space>fd', 'fd')
+map_tele('<leader>ff', 'fd')
+map_tele('<c-p>', 'fd')
 map_tele('<space>pp', 'project_search')
 
 -- Nvim

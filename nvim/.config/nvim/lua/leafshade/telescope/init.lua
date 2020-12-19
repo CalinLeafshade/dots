@@ -81,13 +81,8 @@ function M.edit_dots()
     prompt_title = "~ dotfiles ~",
     shorten_path = false,
     cwd = "~/dots",
-    width = .25,
     find_command = { "fd", "--type", "f", "-H", "-E", "*.git/*" },
-
-    layout_strategy = 'horizontal',
-    layout_config = {
-      preview_width = 0.65,
-    },
+    layout_strategy = 'vertical'
   }
 end
 
@@ -106,7 +101,9 @@ end
 
 
 function M.fd()
-  require('telescope.builtin').fd()
+  require('telescope.builtin').fd({
+      layout_strategy = "vertical"
+    })
 end
 
 function M.builtin()

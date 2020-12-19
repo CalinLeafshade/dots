@@ -4,7 +4,7 @@
 #bold_is_bright = true
 #clickable_url = true
 #dynamic_title = true
-font = Cascadia Code 14
+font = Cascadia Code 13
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
