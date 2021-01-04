@@ -40,6 +40,7 @@ return require("packer").startup(function()
   use 'tjdevries/express_line.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'nvim-lua/lsp-status.nvim'
+  use 'easymotion/vim-easymotion'
 
 end)
 

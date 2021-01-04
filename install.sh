@@ -15,3 +15,4 @@ stow X
 stow redshift
 stow mpd
 stow ncmpcpp
+stow alacritty

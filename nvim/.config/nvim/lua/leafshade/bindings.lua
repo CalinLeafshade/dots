@@ -12,3 +12,12 @@ execute [[ nnoremap <leader>gn    <cmd>lua vim.lsp.buf.rename()<cr> ]]
 execute [[ nnoremap <leader>g0    <cmd>lua vim.lsp.buf.document_symbol()<cr> ]]
 execute [[ nnoremap <leader>gW    <cmd>lua vim.lsp.buf.workspace_symbol()<cr> ]]
 execute [[ nnoremap <leader>ga    <cmd>lua vim.lsp.buf.code_action()<cr>]]
+execute [[ nnoremap <leader>go    <cmd>lua require('leafshade.user_lsp').organizeImports()<cr>]]
+
+execute [[ map <leader> <Plug>(easymotion-prefix)]]
+execute [[ map <leader>j <Plug>(easymotion-j)]]
+execute [[ map <leader>k <Plug>(easymotion-k)]]
+
+execute [[ imap <silent> <c-Space> <Plug>(completion_trigger) ]]
+
+execute [[ autocmd BufWritePost *termite/config silent! !killall -USR1 termite ]]

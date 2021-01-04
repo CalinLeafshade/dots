@@ -1,10 +1,11 @@
 [options]
-#allow_bold = true
+allow_bold = false
 #audible_bell = false
-#bold_is_bright = true
+bold_is_bright = true
 #clickable_url = true
 #dynamic_title = true
-font = Cascadia Code 13
+font = TamzenForPowerline 15
+cell_height_scale=1.1
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false

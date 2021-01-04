@@ -69,5 +69,5 @@ vim.g["prettier#autoformat"] = 0
 api.nvim_command [[autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier]]
 
 api.nvim_command [[nnoremap <leader>ev :e ~/.config/nvim/init.lua<CR>]]
-api.nvim_command [[nnoremap <leader>sv :luafile ~/.config/nvim/init.lua<CR>]]
+api.nvim_command [[nnoremap <leader>lv :luafile ~/.config/nvim/init.lua<CR>]]
 
