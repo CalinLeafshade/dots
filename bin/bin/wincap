@@ -1,7 +1,38 @@
 #!/bin/sh
 
-echo "Click a window to start recording"
+capsFolder="$HOME/captures"
 
-read x y W H <<< `xwininfo | grep -e Width -e Height -e Absolute | grep -oE "[[:digit:]]{1,}" | tr "\n" " "`
+if pidof ffmpeg
+    then
+        killall -INT ffmpeg
 
-ffmpeg -f alsa -ac 1 -i pulse -f x11grab -s ${W}x${H} -r 25 -i :0.0+${x},${y} $1
+        notify-send "Stopped Recording"
+
+    else
+
+        mkdir -p "$capsFolder"
+
+        time=$(date +%F-%H%M%S)
+        filename="$capsFolder/cap-$time.mp4"
+
+        read x y W H <<< `xwininfo | grep -e Width -e Height -e Absolute | grep -oE "[[:digit:]]{1,}" | tr "\n" " "`
+
+        ffmpeg \
+            -f pulse -ac 2 -i default \
+            -f x11grab -framerate 30 -s ${W}x${H} -i :0.0+${x},${y} \
+            -b:v 2000k -minrate:v 2000k -maxrate:v 4000k -bufsize:v 4000k \
+            -c:v h264_nvenc -pix_fmt nv12 -qp:v 19 \
+            -profile:v high -rc:v cbr_ld_hq -preset:v llhq \
+            -c:a libopus \
+            "$filename"
+
+        scp $filename alarm@192.168.1.72:/home/alarm/videos
+
+        link="http://pi.leafshade.ninja/videos/$(basename "$filename")"
+
+        # save link in clipboard 
+        (echo $link | xclip -selection clipboard -in) || exit 1
+
+        notify-send "Capture uploaded to $link"
+
+fi

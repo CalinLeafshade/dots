@@ -5,6 +5,7 @@ bold_is_bright = true
 #clickable_url = true
 #dynamic_title = true
 font = TamzenForPowerline 15
+#font = Cascadia Code PL 13
 cell_height_scale=1.1
 #fullscreen = true
 #icon_name = terminal
@@ -79,15 +80,51 @@ color14 = #7d6f6b
 color7  = #8d827c
 color15 = #c6c0aa
 
+[colors]
+# If both of these are unset, cursor falls back to the foreground color,
+# and cursor_foreground falls back to the background color.
+cursor = #d8caac
+cursor_foreground = #323d43
+
+#foreground_bold = #ffffff
+
+# 20% background transparency (requires a compositor)
+#background = #323d43
+
+# If unset, will reverse foreground and background
+#highlight = #2f2f2f
+
+# Colors from color0 to color254 can be set
+##forest-night
+foreground = #d8caac
+background = #32393d
+color0=#3c474d
+color8=#868d80
+color1=#e68183
+color9=#e68183
+color2=#a7c080
+color10=#a7c080
+color3=#d9bb80
+color11=#d9bb80
+color4=#89beba
+color12=#89beba
+color5=#d3a0bc
+color13=#d3a0bc
+color6=#87c095
+color14=#87c095
+color7=#d8caac
+color15=#d8caac
+
+
 [hints]
 #font = Monospace 12
 #foreground = #dcdccc
 #background = #3f3f3f
 #active_foreground = #e68080
 #active_background = #3f3f3f
-#padding = 2
+padding = 2
 #border = #3f3f3f
 #border_width = 0.5
-#roundness = 2.0
+roundness = 0
 
 # vim: ft=dosini cms=#%s

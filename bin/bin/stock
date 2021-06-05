@@ -1,0 +1,3 @@
+#!/bin/sh
+
+curl -s "https://query1.finance.yahoo.com/v8/finance/chart/$1" | grep -o '"regularMarketPrice":[0-9]*\.[0-9]*' | cut -d':' -f2

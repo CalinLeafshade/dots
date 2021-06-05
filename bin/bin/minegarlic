@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ccminer --algo=allium -o stratum+tcp://freshgarlicblocks.net:3032 -u MPaj43W32jah8qeAT6UscjaxfCgFP19E5u --max-temp=85 --submit-stale

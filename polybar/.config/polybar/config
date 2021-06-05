@@ -18,7 +18,7 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #D81c181c
+background = #32393d
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
@@ -56,9 +56,9 @@ font-0 = "TamzenForPowerline:size=14;1"
 font-1 = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
 font-2 = siji:pixelsize=10;1
 
-modules-left = i3 bspwm
+modules-left = i3
 modules-center = 
-modules-right = mpd aikanow btc temperature memory timeleft date 
+modules-right = mpd btc temperature memory timeleft date 
 
 tray-position = right
 tray-padding = 0
@@ -124,15 +124,6 @@ format-prefix = "💀 "
 format-prefix-font=1
 format = <label>
 exec = /home/steve/bin/timeleft
-format-underline = #69a65c
-
-[module/aikanow]
-type = custom/script
-interval = 20
-format-prefix = "⏲️ "
-format-prefix-font=1
-format = <label>
-exec = /home/steve/bin/aikanow
 format-underline = #69a65c
 
 [module/spotify]

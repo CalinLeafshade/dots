@@ -37,7 +37,7 @@ fi
 /usr/bin/dropbox &
 setxkbmap -option caps:escape
 picom -b --experimental-backends
-feh --bg-fill ~/wallpapers/forest.jpg
+feh --bg-fill ~/wallpapers/pixelforest.jpg
 xset s off
 #sxhkd &
 #exec startfutile
